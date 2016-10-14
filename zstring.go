@@ -17,6 +17,10 @@ func ToTitle(str string) string {
 			buffer.WriteString(newString(arrWords[i], rune(arrWords[i][0]) - 32, 0))
 			buffer.WriteString(" ")
 		}
+		else {
+			buffer.WriteString(arrWords[i])
+			buffer.WriteString(" ")
+		}
 	}
 	return buffer.String()
 }
